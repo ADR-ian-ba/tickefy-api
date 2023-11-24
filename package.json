@@ -4,10 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js", // Assuming 'index.js' is your entry file
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm rebuild bcrypt" // Rebuild bcrypt on postinstall
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "20.x" // Replace with your desired Node.js version
+  },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
@@ -18,3 +23,4 @@
     "mongoose": "^8.0.1"
   }
 }
+
