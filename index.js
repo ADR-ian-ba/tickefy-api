@@ -21,7 +21,11 @@ const BidModel = require("./model/bidModel")
 const UserModel = require("./model/UserModel")
 mongoose.connect(mongodbConnectionString);
 
+<<<<<<< HEAD
 const bcrypt = require('bcryptjs');
+=======
+const bcrypt = require("bcrypt");
+>>>>>>> d9c7be1f2f876e3559f5f3f9116083e61f6cc753
 const salt = bcrypt.genSaltSync(11)
 
 
