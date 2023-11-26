@@ -10,7 +10,7 @@ app.use(bodyParser.text())
 app.use(bodyParser.urlencoded({ limit: "1000mb", extended: true }));
 app.use(express.json());
 const corsOptions = {
-  origin: 'https://tickefy.onrender.com/', 
+  origin: 'https://tickefy.onrender.com', 
   optionsSuccessStatus: 200 
 };
 
