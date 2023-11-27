@@ -73,7 +73,7 @@ app.post('/uploadconcert', async(req, res) => {
   });
 
 app.get("/data", async (req, res)=>{
-  const data = await ConcertModel.find({}, '_id concertPosterImage')
+  const data = await ConcertModel.find({}, '_id concertPosterImage eventType')
   console.log(data)
   res.json(data)
 })
