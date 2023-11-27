@@ -9,13 +9,13 @@ app.use(bodyParser.json({ limit: "1000mb" }));
 app.use(bodyParser.text())
 app.use(bodyParser.urlencoded({ limit: "1000mb", extended: true }));
 app.use(express.json());
-// const corsOptions = {
-//   origin: 'https://tickefy.onrender.com', 
-//   optionsSuccessStatus: 200 
-// };
+const corsOptions = {
+  origin: 'https://tickefy.onrender.com', 
+  optionsSuccessStatus: 200 
+};
 
-// app.use(cors(corsOptions));
-app.use(cors())
+app.use(cors(corsOptions));
+// app.use(cors())
 
 require("dotenv").config()
 const mongodbConnectionString = process.env.MONGODB_CONNECTION_STRING 
